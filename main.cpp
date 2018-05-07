@@ -76,9 +76,11 @@ std::ostream& operator<<(std::ostream &os, const FBool& value) {
         os << "F(";
     os << value.getFloat();
     os << ")";
-    
+
     return os;
 }
+
+//Main program
 
 int main(){
     FBool t = true;
@@ -88,7 +90,6 @@ int main(){
     FBool y = t || f;
     FBool z = t && !f;
 
-    std::cout << "Yo!" << std::endl;
-    std::cout << x.getBool() << " " << y.getBool() << " " << z.getBool() << std::endl;
-    std::cout << t << " " << f << std::endl;
+    std::cout << "t=" << t << " f=" << f << std::endl;
+    std::cout << "x=" << x << " y=" << y << " z=" << z << std::endl;
 }
