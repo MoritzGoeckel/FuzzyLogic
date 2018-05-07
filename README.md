@@ -20,3 +20,4 @@ This would output
 t=T(1) f=F(0.3)
 x=F(0.3) y=T(1) z=T(0.7)
 ```
+[Fuzzy logic](https://en.wikipedia.org/wiki/Fuzzy_logic) on Wikipedia

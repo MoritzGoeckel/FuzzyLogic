@@ -50,11 +50,11 @@ FBool& FBool::operator=(const float& value){
 }
 
 FBool FBool::operator&&(const FBool& value) const{
-    return FBool(std::min(this->state, value.state));
+    return FBool(std::min(this->state, value.state)); //Alternative: x*y
 }
 
 FBool FBool::operator||(const FBool& value) const{
-    return FBool(std::max(this->state, value.state));
+    return FBool(std::max(this->state, value.state)); //Alternative: x+y-x*y
 }
 
 FBool FBool::operator!() const{
